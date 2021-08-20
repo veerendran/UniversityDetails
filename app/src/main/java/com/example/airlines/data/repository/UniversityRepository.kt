@@ -20,10 +20,5 @@ class UniversityRepository @Inject constructor(
         databaseQuery = { localDataSource.getAllCharacters() },
         networkCall = { remoteDataSource.getUniversities(country) },
         saveCallResult = { localDataSource.insertAll(it) }
-
     )
-
-    fun deleteDB() {
-
-    }
 }
